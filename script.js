@@ -17,3 +17,11 @@ if(hours < 12) {
 }
 
 hero.querySelector('h1').innerText = greeting;
+
+const menuItems = document.querySelectorAll('.menu .item');
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const itemName = item.querySelector('h3').innerText;
+    alert(`${itemName} added to your order!`);
+  });
+});

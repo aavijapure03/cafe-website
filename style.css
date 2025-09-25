@@ -10,7 +10,6 @@ body {
     background: #fffaf5;
     color: #333;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -19,50 +18,69 @@ body {
     background: #6f4e37;
     color: white;
 }
-
 .header .logo {
     font-size: 20px;
     font-weight: bold;
 }
-
 nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: url("https://images.unsplash.com/photo-1511920170033-f8396924c348") no-repeat center/cover;
-  color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background: url("https://images.unsplash.com/photo-1511920170033-f8396924c348") no-repeat center/cover;
+    color: white;
 }
-
 .hero h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
-
 .hero button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  background: #f4c542;
-  color: #333;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #f4c542;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero button:hover {
+    background: #e5a520;
+}
+.menu {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.hero button:hover {
-  background: #e5a520;
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu .item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu .item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #6f4e37;
 }
